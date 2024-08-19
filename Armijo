@@ -7,7 +7,7 @@ function armijo(x, f, gradfx, η, minstep, fx)
     α = 1.0
 
     while true
-        # Subtração componente a componente
+        
         q = (x[1] - α * gradfx[1], x[2] - α * gradfx[2])
         fq = f(q)
         stptest = fq - fx + α * GD
